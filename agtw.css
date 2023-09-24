@@ -1,0 +1,183 @@
+html {
+    /*    font-family: "lucida grande", tahoma, verdana, arial, sans-serif;  */
+    font-family:  "Noto Sans TC", "微軟正黑體", sans-serif, arial;
+    font-size: 16px;
+}
+
+input, select {
+    /*font-size: 1rem;*/
+}
+
+/*
+overflow 先設 hidden，然後再設 overflow-y 看要 auto 還是 scroll。
+*/
+body {
+    display: block;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+
+/*
+no margin, padding and border
+h1, h2, h3, h4, h5, h6 都不要加不必要的 margin, padding 及 border,
+UL LI 不縮排(無 margin, padding)
+https://developer.mozilla.org/zh-TW/docs/Web/CSS/CSS_Lists_and_Counters/Consistent_list_indentation
+https://www.oxxostudio.tw/articles/201405/css-selector.html
+https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_lists
+*/
+body, div, tr, td, h1, h2, h3, h4, h5, h6, ul, ol, li {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+textarea {
+    resize: none;
+    width:100%;
+}
+
+/*
+table 無 border, 無 cell space
+*/
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+tr, td {
+    margin: 0;
+    border: none;
+    padding: 0;
+}
+
+td {
+    vertical-align: top;
+}
+
+
+div, table, tr, td, span {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing:  border-box;
+}
+
+
+#rt-mask {
+    height: 100%;
+    width: 100%;
+    z-index: 10000;
+    background-image:url(gridbkg.gif);
+    background-repeat: repeat;
+}
+
+#rt-login {
+
+}
+
+
+.center-me {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
+
+/*
+使用 Display: table-cell 做 文字 垂直置中
+https://ithelp.ithome.com.tw/articles/10206524
+*/
+.center-text {
+    /*display: table-cell;*/
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+.drop-shadow {
+    box-shadow: 10px 10px 5px gray;
+}
+
+
+
+#tool_box_div {
+    /*font-size: 0.5em;*/
+    /*transform: scale(0.5);*/
+    /*border: 3px solid yellowgreen;*/
+    width: 100%;
+    height: auto;
+}
+
+
+.textarea-label-text {
+    font-size: 0.6em;
+    color: darkslategray;
+}
+
+.button-label-text {
+    font-size: 0.9em;
+    color: darkslategray;
+}
+
+
+.kdv-ui-span label {
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    color: darkslategray;
+}
+
+.kdv-ui-span input {
+/*    text-align: center;
+    font-size: 1em;*/
+}
+
+
+#json_resp_text {   
+}
+
+#post_text {   
+}
+
+
+
+.mylabel{
+    font-size: 10px;
+    color: red;
+}
+
+
+
+/*
+http://stackoverflow.com/questions/826782/css-rule-to-disable-text-selection-highlighting
+*/
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+
+
+
+
+
+
+.test123 {
+    color:  lavender;
+    visibility:  hidden;
+}
+
+
