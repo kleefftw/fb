@@ -1,10 +1,11 @@
 html {
     /*    font-family: "lucida grande", tahoma, verdana, arial, sans-serif;  */
-    font-family:  "Noto Sans TC", "微軟正黑體", sans-serif, arial;
+    font-family: "Noto Sans TC", "微軟正黑體", sans-serif, arial;
     font-size: 16px;
 }
 
-input, select {
+input,
+select {
     /*font-size: 1rem;*/
 }
 
@@ -19,8 +20,6 @@ body {
     overflow: hidden;
 }
 
-
-
 /*
 no margin, padding and border
 h1, h2, h3, h4, h5, h6 都不要加不必要的 margin, padding 及 border,
@@ -29,7 +28,19 @@ https://developer.mozilla.org/zh-TW/docs/Web/CSS/CSS_Lists_and_Counters/Consiste
 https://www.oxxostudio.tw/articles/201405/css-selector.html
 https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_lists
 */
-body, div, tr, td, h1, h2, h3, h4, h5, h6, ul, ol, li {
+body,
+div,
+tr,
+td,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li {
     margin: 0;
     padding: 0;
     border: none;
@@ -37,7 +48,7 @@ body, div, tr, td, h1, h2, h3, h4, h5, h6, ul, ol, li {
 
 textarea {
     resize: none;
-    width:100%;
+    width: 100%;
 }
 
 /*
@@ -48,7 +59,8 @@ table {
     border-spacing: 0;
 }
 
-tr, td {
+tr,
+td {
     margin: 0;
     border: none;
     padding: 0;
@@ -58,11 +70,17 @@ td {
     vertical-align: top;
 }
 
-
-div, table, tr, td, span {
+/*
+box-sizing
+*/
+div,
+table,
+tr,
+td,
+span {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
-    -webkit-box-sizing:  border-box;
+    -webkit-box-sizing: border-box;
 }
 
 
@@ -70,13 +88,11 @@ div, table, tr, td, span {
     height: 100%;
     width: 100%;
     z-index: 10000;
-    background-image:url(gridbkg.gif);
+    background-image: url(gridbkg.gif);
     background-repeat: repeat;
 }
 
-#rt-login {
-
-}
+#rt-login {}
 
 
 .center-me {
@@ -136,20 +152,18 @@ https://ithelp.ithome.com.tw/articles/10206524
 }
 
 .kdv-ui-span input {
-/*    text-align: center;
+    /*    text-align: center;
     font-size: 1em;*/
 }
 
 
-#json_resp_text {   
-}
+#json_resp_text {}
 
-#post_text {   
-}
+#post_text {}
 
 
 
-.mylabel{
+.mylabel {
     font-size: 10px;
     color: red;
 }
@@ -170,14 +184,23 @@ http://stackoverflow.com/questions/826782/css-rule-to-disable-text-selection-hig
 
 
 
-
+/*for Selects
+.select {
+    direction: ltr;
+    float:left;
+    width:50%;
+    text-align: right;
+}
+.select option {
+    direction: ltr;
+    float:right;
+    width:50%;
+}*/
 
 
 
 
 .test123 {
-    color:  lavender;
-    visibility:  hidden;
+    color: wheat;
+    visibility: hidden;
 }
-
-
