@@ -5,25 +5,25 @@
         <script src="jquery-3.4.1.min.js"></script>
         <script src="jquery.flot.083.js"></script>
         <script>
-
-//            (function () {
-//                // dev load JS
-//                loadJs("agtw_js_loader.js");
-//                // Load js with no cache
-//                function loadJs(url) {
-//                    url += "?ran=" + Math.floor(Math.random() * 10000000, 0);
-//                    var errMsg = "Load js error, js file not found: " + url + "";
-//                    var alertScript = "alert(\'" + errMsg + "\')";
-//                    var tags = "<" + "script src=\"" + url + "\" onerror=\"" + alertScript + "\"></script" + ">";
-//                    document.write(tags);
-//                }
-//            })();
-
+            /*
+            (function () {
+                // dev load JS
+                loadJs("agtw_js_loader.js");
+                // Load js with no cache
+                function loadJs(url) {
+                    url += "?ran=" + Math.floor(Math.random() * 10000000, 0);
+                    var errMsg = "Load js error, js file not found: " + url + "";
+                    var alertScript = "alert(\'" + errMsg + "\')";
+                    var tags = "<" + "script src=\"" + url + "\" onerror=\"" + alertScript + "\"></script" + ">";
+                    document.write(tags);
+                }
+            })();
+            */
         </script>
 
         <!-- prod. -->
-        <link rel="stylesheet" href="agtw.css" type="text/css">
-        <script src="agtw-all-min.js?ran=99" charset="UTF-8"></script>
+                <link rel="stylesheet" href="agtw.css" type="text/css">
+                <script src="agtw-all-min.js?ran=99" charset="UTF-8"></script>
 
         <!-- dev. -->
         <!--<script src="agtw_js_loader.js?ran=666" charset="UTF-8"></script>-->
@@ -46,16 +46,15 @@
 
 
             <!--Start of float right div-->
-            <div id="rt-left" style="height:100%;width:50%;overflow:hidden;float: right">
+            <div id="rt-right" style="height:100%;width:50%;overflow:hidden;float: right">
 
                 <!--Start of scroll div-->
-                <div id="dev-ct" style="height:100%;width:100%;overflow:hidden;overflow-x:hidden;overflow-y:scroll">
+                <div id="tool-ct" style="height:100%;width:100%;overflow:hidden;overflow-x:hidden;overflow-y:scroll;-webkit-overflow-scrolling:touch">
 
-                    <div>
-                        <div id="tool_box_div">
-                        </div>
-                        <br><br><br><br>
-                    </div>
+                    <!--                    <div>-->
+                    <div id="tool_box_div"></div>
+                    <!--                        <br><br><br><br>
+                                        </div>-->
 
                 </div>
                 <!--End of scroll div-->
